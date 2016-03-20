@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class TitleScreenScript : MonoBehaviour
 {
@@ -18,7 +18,8 @@ public class TitleScreenScript : MonoBehaviour
 
     public void PlayClick() 
     {
-        SceneManager.LoadScene(1); // load level 1       
+		//SceneManager.LoadScene(1); // load level 1       
+		Application.LoadLevel(1);
     }
 
     public void QuitClick()
