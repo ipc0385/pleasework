@@ -5,14 +5,14 @@ using System.Collections;
 public class Transition : MonoBehaviour 
 {
 	[SerializeField]
-	State myState;
+	Ian_FSM.State myState;
 
 	public virtual void Activate(Machine input)
 	{
 
 	}
 
-	public State state
+	public Ian_FSM.State state
 	{
 		get
 		{

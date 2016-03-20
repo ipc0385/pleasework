@@ -5,7 +5,7 @@ using System.Collections;
 public class Machine : MonoBehaviour 
 {
 	[SerializeField]
-	State myState;
+	Ian_FSM.State myState;
 	
 	public void Switch(Transition input)
 	{
