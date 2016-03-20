@@ -50,7 +50,7 @@ public class PlanState : State{
 
     public void toDoAction()
     {
-        agent.currentState = agent.doAction;
+        throw new System.NotImplementedException();
     }
 
 }

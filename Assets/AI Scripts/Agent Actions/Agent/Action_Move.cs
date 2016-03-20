@@ -25,4 +25,14 @@ public class Action_Move : AI_Action
         Debug.Log("In perform action");
         return true;
     }
+
+    public override bool isDone()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void reset()
+    {
+        throw new System.NotImplementedException();
+    }
 }

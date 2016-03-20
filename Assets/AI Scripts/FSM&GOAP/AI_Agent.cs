@@ -20,11 +20,8 @@ public class AI_Agent : MonoBehaviour
     
     void Start()
     {
-        
         availableActions = new HashSet<AI_Action>();
-        currentActions = new Queue<AI_Action>();
-        
-
+        currentActions = new Queue<AI_Action>();        
     }
 
     public bool hasActionsReady()

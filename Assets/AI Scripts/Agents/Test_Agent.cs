@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class Test_Agent : MonoBehaviour, IGOAP {
 
@@ -20,9 +21,15 @@ public class Test_Agent : MonoBehaviour, IGOAP {
         return worldData;
     }
 
-    public abstract HashSet<KeyValuePair<string, object>> createGoalState();
+    public HashSet<KeyValuePair<string, object>> createGoalState()
+    {
+       throw new NotImplementedException();
+    }
 
-    public void planFailed(HashSet<KeyValuePair<string, object>> failedGoal);
+    public void planFailed(HashSet<KeyValuePair<string, object>> failedGoal)
+    {
+        throw new NotImplementedException();
+    }
 
     public void planFound(HashSet<KeyValuePair<string, object>> goal, Queue<AI_Action> actions)
     {
@@ -41,6 +48,6 @@ public class Test_Agent : MonoBehaviour, IGOAP {
 
     public bool moveAgent(AI_Action nextAction)
     {
-
+        return false;
     }
 }

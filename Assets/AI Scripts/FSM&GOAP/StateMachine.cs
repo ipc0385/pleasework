@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class State : MonoBehaviour{
 
@@ -8,13 +9,28 @@ public class State : MonoBehaviour{
     
     public AI_Planner planner;
 
-    void UpdateState();
+    public virtual void UpdateState()
+    {
+        throw new NotImplementedException();
+    }
 
-    void ActivateTrigger(Collider other);
+    public virtual void ActivateTrigger(Collider other)
+    {
+        throw new NotImplementedException();
+    }
 
-    protected void toMoveTo();
+    protected virtual void toMoveTo()
+    {
+        throw new NotImplementedException();
+    }
 
-    protected void toDoAction();
+    protected virtual void toDoAction()
+    {
+        throw new NotImplementedException();
+    }
 
-    protected void toPlan();
+    protected virtual void toPlan()
+    {
+        throw new NotImplementedException();
+    }
 }
